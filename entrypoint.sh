@@ -6,5 +6,4 @@ chmod 600 /root/.ssh/id_rsa
 
 git config --global --add safe.directory /github/workspace
 git remote add mirror $INPUT_DESTINATION_REPOSITORY
-git fetch --unshallow
 git push mirror $INPUT_DESTINATION_BRANCH_NAME -f
